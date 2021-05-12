@@ -13,9 +13,9 @@ lr = LinearRegression()
 lr.fit(xTrain,yTrain)
 predict = lr.predict(xTest)
 
-print("Mean Square Error:      {}".format(mean_squared_error(yTest,predict)))
-print("Root Mean Square Error: {}".format(np.sqrt(mean_squared_error(yTest,predict))))
-print("Mean Absolute Error:    {}".format(mean_absolute_error(yTest,predict)))
+print("Mean Square Error:      {:.2f}".format(mean_squared_error(yTest,predict)))
+print("Root Mean Square Error: {:.2f}".format(np.sqrt(mean_squared_error(yTest,predict))))
+print("Mean Absolute Error:    {:.2f}".format(mean_absolute_error(yTest,predict)))
 
 
 
