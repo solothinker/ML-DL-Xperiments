@@ -28,6 +28,7 @@ def modelCal(model):
     plt.step(np.arange(len(yTest)),predict,'x', label="predict")
     plt.legend()
     plt.show()
+    
 print("Ridge Regression ")    
 model = Ridge(alpha=0.5)
 model.fit(xTrain,yTrain)
